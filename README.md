@@ -1,2 +1,0 @@
-# Dopka
-strona do ćwiczeń
