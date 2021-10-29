@@ -9,7 +9,7 @@ function L(r,h)
 x_liczba=parseFloat(r)
 h_liczba=parseFloat(h)
 L_wynik=Math.PI*x_liczba*x_liczba*h_liczba
-document.getElementsByName('obj')[0].value=V_wynik.toFixed(2); /* na dokument */
+document.getElementsByName('obj')[0].value=L_wynik.toFixed(2); /* na dokument */
 alert("L="+L_wynik.toFixed(2)+" cm^3"); /*do okna Alert */
 pokaz1.innerHTML="L="+L_wynik.toFixed(2)+" cm^3"+"<br>"; /* do tabeli */
 }
@@ -45,13 +45,13 @@ Pc=
 Przykład obliczenia V i Pc walca
 </title>
 <script language="JavaScript">
-function V(x,h)
+function L(x,h)
 {
 x_liczba=parseFloat(x)
 h_liczba=parseFloat(h)
-V_wynik=Math.PI*x_liczba*x_liczba*h_liczba
-document.getElementsByName('obj')[0].value=V_wynik.toFixed(2); /* na dokument */
-alert("V="+V_wynik.toFixed(2)+" cm^3"); /*do okna Alert */
+L_wynik=Math.PI*x_liczba*x_liczba*h_liczba
+document.getElementsByName('obj')[0].value=L_wynik.toFixed(2); /* na dokument */
+alert("L="+L_wynik.toFixed(2)+" cm^3"); /*do okna Alert */
 pokaz1.innerHTML="L="+L_wynik.toFixed(2)+" cm^3"+"<br>"; /* do tabeli */
 }
 function Pc(x,h)
