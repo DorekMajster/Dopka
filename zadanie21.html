@@ -4,23 +4,14 @@
 zadanie 21
 </title>
 <script language="JavaScript">
-function V(r,h)
+function L(r,h)
 {
 x_liczba=parseFloat(r)
 h_liczba=parseFloat(h)
-V_wynik=Math.PI*x_liczba*x_liczba*h_liczba
+L_wynik=Math.PI*x_liczba*x_liczba*h_liczba
 document.getElementsByName('obj')[0].value=V_wynik.toFixed(2); /* na dokument */
-alert("V="+V_wynik.toFixed(2)+" cm^3"); /*do okna Alert */
-pokaz1.innerHTML="V="+V_wynik.toFixed(2)+" cm^3"+"<br>"; /* do tabeli */
-}
-function Pc(r,h)
-{
-x_liczba=parseFloat(r)
-h_liczba=parseFloat(h)
-Pc_wynik=2*Math.PI*x_liczba*x_liczba+2*Math.PI*x_liczba*h_liczba
-document.getElementsByName('pole')[0].value=Pc_wynik.toFixed(2);
-alert("Pc="+Pc_wynik.toFixed(2)+" cm^2");
-pokaz2.innerHTML="Pc="+Pc_wynik.toFixed(2)+"cm^2";
+alert("L="+L_wynik.toFixed(2)+" cm^3"); /*do okna Alert */
+pokaz1.innerHTML="L="+L_wynik.toFixed(2)+" cm^3"+"<br>"; /* do tabeli */
 }
 </script>
 </head>
@@ -37,7 +28,7 @@ Podaj h=
 <input TYPE="submit" Value="oblicz" >
 <br>
 <br>
-V=
+L=
 <input size="6" name="obj">
 Pc=
 <input size="6" name="pole">
@@ -61,7 +52,7 @@ h_liczba=parseFloat(h)
 V_wynik=Math.PI*x_liczba*x_liczba*h_liczba
 document.getElementsByName('obj')[0].value=V_wynik.toFixed(2); /* na dokument */
 alert("V="+V_wynik.toFixed(2)+" cm^3"); /*do okna Alert */
-pokaz1.innerHTML="V="+V_wynik.toFixed(2)+" cm^3"+"<br>"; /* do tabeli */
+pokaz1.innerHTML="L="+L_wynik.toFixed(2)+" cm^3"+"<br>"; /* do tabeli */
 }
 function Pc(x,h)
 {
@@ -98,3 +89,6 @@ Pc=
 </table>
 </body>
 </html>
+
+math.sqrt
+math.atan
