@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>  Pola prostokatow   </title>
+<script language="JavaScript">
+
+
+  function Pole_dopka(a_dop,b_dop){ 
+  a_dop=parseFloat(a_dop);
+  b_dop=parseFloat(b_dop);
+
+wynik = a_dop * b_dop;
+document.getElementsByName('pole')[0].value=wynik.toFixed(2); 
+alert("Pole="+wynik.toFixed(2)+" cm2");
+wyprowadz_pole_dop.innerHTML="Pole="+wynik.toFixed(2)+" cm2"+"<br>";
+}
+
+
+function obwod_dop(a_dop,b_dop){
+a_dop=parseFloat(a_dop);
+b_dop=parseFloat(b_dop);
+
+wynik = a_wlod * 2 + b_wlod * 2;
+document.getElementsByName('obw')[0].value=wynik.toFixed(2); 
+alert("Obwod="+wynik.toFixed(2)+" cm");
+wyprowadz_obwod_dop.innerHTML="Obwod="+wynik.toFixed(2)+" cm"+"<br>";
+}
+ </script>
+</head>
+<body>
+<form name="formularz" action="..." onsubmit="Pole_dopka(this.a_dana_dop.value,this.b_dana_dop.value); obwod_dopka(this.a_dana_dop.value,this.b_dana_dop.value);return false">
+Podaj a=
+<input size="6" name="a_dana_dop">
+Podaj b=
+<input size="6" name="b_dana_dop">
+<br>
+<br>
+<input TYPE="submit" Value="oblicz" >
+<br>
+<br>
+Pole=
+<input size="6" name="pole">
+Obwod=
+<input size="6" name="obw">
+</form>
+<table>
+<tr id="wyprowadz_pole_dop"></tr>
+<tr id="wyprowadz_obwod_dop"></tr>
+</table>
+</body>
+</html>
