@@ -1,7 +1,7 @@
 <html>
 <head>
 <title>  Pola prostokatow   </title>
-<script language="JavaScript">
+  <script language="JavaScript">
 
 
   function Pole_dopka(a_dop,b_dop){ 
@@ -15,15 +15,16 @@ wyprowadz_pole_dop.innerHTML="Pole="+wynik.toFixed(2)+" cm2"+"<br>";
 }
 
 
-function obwod_dop(a_dop,b_dop){
-a_dop=parseFloat(a_dop);
-b_dop=parseFloat(b_dop);
+ function obwod_dop(a_dop,b_dop){
+ a_dop=parseFloat(a_dop);
+ b_dop=parseFloat(b_dop);
 
 wynik = a_wlod * 2 + b_wlod * 2;
 document.getElementsByName('obw')[0].value=wynik.toFixed(2); 
 alert("Obwod="+wynik.toFixed(2)+" cm");
 wyprowadz_obwod_dop.innerHTML="Obwod="+wynik.toFixed(2)+" cm"+"<br>";
 }
+  
  </script>
 </head>
 <body>
