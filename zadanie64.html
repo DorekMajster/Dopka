@@ -1,0 +1,24 @@
+<html lang="pl">
+ <head>
+  <script type="text/javascript">
+   function okno_dopka() {
+   window.close()
+                      }                    
+  </script>
+ </head>
+<body>
+<script language="JavaScript">
+var x=prompt("Podaj liczbe","");
+var a=parseFloat(x);
+if ((a%2)==0){
+  
+  document.write('<p style="font-size:3cm; color:red">Ta liczba jest parzysta.</p>');
+  document.write('<input type="button" value="zamknij" onclick="okno_dopka()">');
+}
+else{
+  document.write('<p style="font-size:5cm; color:silver">Ta liczba jest nieparzysta.</p>');
+  document.write('<input type="button" value="zamknij" onclick="okno_dopka()">');
+    }
+</script>
+</body>
+</html>
