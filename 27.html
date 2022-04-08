@@ -1,19 +1,20 @@
 <html>
 <head>
 <script type="text/javascript">
-var czlowiek = {
-nazwisko: 'Nowacki',
-imie: 'Marek',
-zawod: 'informatyk',
-pokaz: function ()
+var komputer = {
+karta_graficzna: 'GeForce RTX 3060',
+procesor: 'i7-6700T',
+ram: '16GB',
+Komputer_wyswietl_dopka: function ()
 {
-document.write(this.nazwisko + ' ' + this.imie)
+document.write(this.karta_graficzna + ' ' + this.procesor + '  ILOŚĆ RAM: ' + this.ram)
 }
 }
-czlowiek.pokaz();
-czlowiek.wiek=19;
-czlowiek.wypisz=function() {alert('Wiek: ' + this.wiek + 'lat')}
-czlowiek.wypisz();
+komputer.Komputer_wyswietl_dopka();
+komputer.pokaz();
+komputer.pamiec='1TB';
+komputer.Komputer_wyswietl_dopka=function() {alert('Pamiec: ' + this.pamiec)}
+komputer.Komputer_wyswietl_dopka();
 </script>
 </head>
 <body>
