@@ -1,0 +1,25 @@
+<html>
+ <head>
+ <script type="text/javascript">
+ 
+ function komputer(karta_k,procesor_k,ram_k)
+{
+this.karta=karta_k;
+this.procesor=procesor_k;
+this.ram=ram_k;
+}
+ komputer.prototype.wypisz = function () 
+ {
+ alert(this.karta + ' ' + this.procesor+ ' ' + this.ram);
+ };
+var komputer1 = new komputer("GTX 1060", "i5 10400", "8GB"); 
+var komputer2 = new komputer('RTX 3060', 'i5 11400', '16GB');
+komputer1.wypisz(); 
+komputer2.wypisz();
+ document.write("pierwszy komputer"+" "+komputer1.karta+" "+komputer1.procesor+" "+komputer1.ram + "<br>");
+ document.write("drugi komputer "+" "+komputer2.karta+" "+komputer2.procesor+" "+komputer2.ram);
+</script>
+</head>
+<body>
+</body>
+</html>
