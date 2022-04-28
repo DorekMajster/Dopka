@@ -11,10 +11,10 @@ document.write(this.karta_graficzna + ' ' + this.procesor + '  ILOŚĆ RAM: ' + 
 }
 }
 komputer.Komputer_wyswietl_dopka();
-komputer.pokaz();
-komputer.pamiec='1TB';
-komputer.Komputer_wyswietl_dopka=function() {alert('Pamiec: ' + this.pamiec)}
-komputer.Komputer_wyswietl_dopka();
+komputer.pamiec=500;
+komputer.wypisz=function() {alert('Pamiec: ' + this.pamiec + 'GB')}
+komputer.wypisz();
+
 </script>
 </head>
 <body>
